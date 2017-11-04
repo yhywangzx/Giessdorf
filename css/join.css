@@ -1,0 +1,215 @@
+@charset "utf-8";
+.g-header .head-content ul li:nth-child(5) span{
+    display:block;
+}
+/* 开始导航图片 */
+.banner-img{
+    background: yellowgreen;
+}
+.banner-img .banner-box > p{
+    background-color: rgba(221,176,7,0.80);
+}
+/* 开始加盟 */
+.join{
+    padding:120px;
+}
+.join-box{
+    width: 1000px;
+    margin: auto;
+}
+/* 开始加盟条件 */
+.join-box h2{
+    opacity: 0;
+    position: relative;
+    display: inline-block;
+    font-size:32px;
+    color: #393b3a;
+    padding:5px 20px;
+    border:7px solid #e2e2e2;
+    animation: h 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+@keyframes h{
+	0%{
+        -ms-transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+.join-box h2::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -7px;
+    width: 7px;
+    height: 50px;
+    background:#00572c;
+}
+.join-box h2::after{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -20px;
+    width: 50px;
+    height: 7px;
+    background:#00572c;
+}
+.join-condition{
+    padding-bottom: 120px;
+}
+.join-condition .condition-box{
+    opacity: 0;
+    padding-top: 40px;
+    animation: condition 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+@keyframes condition{
+	0%{
+        opacity: 0;
+        -ms-transform: translateX(-90px);
+		-webkit-transform: translateX(-90px);
+		transform: translateX(-90px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+.join-condition .condition-box .condition-img{
+    width: 500px;
+    height: 300px;
+    background: red; 
+}
+.join-condition .condition-box .condition-info{
+    padding:30px 0 0 80px;
+}
+.join-condition .condition-box .condition-info p{
+    font-size: 24px;
+    color: #393b3a;
+    line-height: 44px;
+}
+/* 开始加盟流程 */
+.join-flow{
+    display: none;
+}
+.flow-box{
+    opacity: 0;
+    padding-top: 40px;
+    height: 300px;
+    animation: flow 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+@keyframes flow{
+	0%{
+        opacity: 0;
+        -ms-transform: translateX(90px);
+		-webkit-transform: translateX(90px);
+		transform: translateX(90px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+.flow-box .flow-img{
+    width: 300px;
+    height: 100%;
+    background: yellowgreen;
+}
+.flow-box .flow-info{
+    padding:65px;
+    width: 570px;
+    height:170px;
+    font-size: 25px;
+    color: #393b3a;
+    background: #f9f9f9;
+}
+.flow-box .flow-info .info-box{
+    height: 40px;
+    line-height: 40px;
+}
+.flow-box .flow-info i{
+    font-size: 32px;
+    line-height: 40px;
+    color: #393b3a;
+    font-weight: bold;
+    padding: 0 45px;
+}
+.flow-box .info-next{
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+}
+.flow-box .info-next i{
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    margin-top: -16px;
+}
+.flow-box .flow-info .info-last i{
+    padding:0 52px;
+}
+
+/* 开始加盟QA */
+.join-good{
+    display: none;
+}
+.good-box {
+    opacity: 0;
+    padding-top: 40px;
+    animation: good 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+@keyframes good{
+	0%{
+        opacity: 0;
+        -ms-transform: translateX(-90px);
+		-webkit-transform: translateX(-90px);
+		transform: translateX(-90px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+.good-list-left{
+    width: 436px;
+    overflow: hidden;
+}
+.good-list-left li{
+    width: 100%;
+    height: 58px;
+    color: #393b3a;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 58px;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+}
+.good-list-left li:hover{
+    background: #fafafa;
+}
+.list-select{
+    background: #fafafa;
+}
+.good-list-right{
+    width: 524px;
+    min-height: 600px;
+    background: #fafafa;
+    padding: 25px 14px 14px 26px;
+}
+.good-list-right p{
+    font-size: 14px;
+    color: #393b3a;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+

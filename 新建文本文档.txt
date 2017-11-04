@@ -1,0 +1,28 @@
+git init 创建.git文件夹
+
+git add index.html 添加单个文件
+git add . 添加所有文件
+git commit -m “”提交到本地仓库 “”里面是注释 
+//两步工作区放到代码仓库
+//可以多次add 一次commit
+
+
+git config --global user.email "邮箱地址"
+
+git config --global user.name "github名字"
+
+
+git log 查看commit内容
+
+
+本地仓库内容提交到远程仓库内容
+
+git remote add origin git@github.com:yhywangzx/Giessdorf.git 关联本地和远程
+
+git push origin master 推送到远程
+
+ssh-keygen -t rsa -C "远程仓库邮箱" 
+
+权限 用户/.ssh下面的.pub密匙复制到github用户setting下的key
+
+git pull 拉取文件

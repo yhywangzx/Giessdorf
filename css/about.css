@@ -1,0 +1,207 @@
+@charset "utf-8";
+.g-header .head-content ul li:nth-child(6) span{
+    display:block;
+}
+/* 开始导航图片 */
+.banner-img{
+    background: red;
+}
+.banner-img .banner-box > p{
+    background-color: rgba(221,176,7,0.80);
+}
+/* 开始认识吉事多 */
+.about{
+    padding:120px 0 40px;
+}
+.about-box{
+    width: 1000px;
+    margin: auto;
+}
+/* 开始关于 */
+.about-box h2{
+    opacity: 0;
+    position: relative;
+    display: inline-block;
+    font-size:32px;
+    color: #393b3a;
+    padding:5px 20px;
+    border:7px solid #e2e2e2;
+    animation: h 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+@keyframes h{
+	0%{
+        -ms-transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+		
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+.about-box h2::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -7px;
+    width: 7px;
+    height: 50px;
+    background:#00572c;
+}
+.about-box h2::after{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -20px;
+    width: 50px;
+    height: 7px;
+    background:#00572c;
+}
+.about-g{
+    padding-bottom: 120px;
+}
+.about-g .g-box{
+    opacity: 0;
+    padding-top: 40px;
+    animation: condition 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+@keyframes condition{
+	0%{
+        opacity: 0;
+        -ms-transform: translateX(-90px);
+		-webkit-transform: translateX(-90px);
+		transform: translateX(-90px);
+		
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+.about-g .g-box .g-info{
+    width: 546px;
+}
+.about-g .g-box .g-info h3{
+    font-size: 24px;
+    color: #393b3a;
+    line-height: 36px;
+    width: 338px;
+    margin: 30px 0 20px 0;
+}
+.about-g .g-box .g-info p{
+    font-size: 16px;
+    color: #898989;
+    line-height: 22px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -o-box;
+    display: -moz-box;
+    display: -ms-box;
+    -webkit-box-orient: vertical;
+    -o-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    -o-line-clamp: 4;
+    -ms-line-clamp: 4;
+    -moz-line-clamp: 4;
+    overflow: hidden;
+}
+.about-g .g-box .g-info a{
+    display: inline-block;
+    color: #00572c;
+    font-size: 14px;
+}
+.about-g .g-box .g-img{
+    margin-left: 24px;
+    height: 300px;
+    width: 430px;
+    background: red;
+}
+.about-g .g-box p{
+    font-size: 20px;
+    line-height: 37px;
+    color: #393b3a;
+}
+/* 开始留言板 */
+
+.about-board .board-box{
+    opacity: 0;
+    padding-top: 40px;
+    animation: board 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+@keyframes board{
+	0%{
+        opacity: 0;
+        -ms-transform: translateX(90px);
+		-webkit-transform: translateX(90px);
+		transform: translateX(90px);
+		
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateX(0);
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+.about-board p{
+    font-size: 20px;
+    color: #393b3a;
+    line-height: 48px;
+    margin-bottom:10px;
+}
+.about-board input {
+    color: #393b3a;
+    width: 400px;  
+}
+.about-board textarea { 
+    color: #393b3a;
+    width: 400px;
+}
+.about-board label{
+    text-align: left;
+    font-size: 16px;
+    color: #393b3a;
+}
+.layui-form-item{
+    margin-left:-12px;
+}
+.board-title{
+    font-size:18px;
+    color:#393b3a;
+    font-weight: 100;
+    padding: 20px 0 20px 100px;
+}
+.board-title i{
+    margin-right: 5px;
+}
+/* 开始邮箱联系 */
+.about-email{
+    overflow: hidden;
+}
+.about-email li{
+    width: 250px;
+    text-align: center;
+    margin: 0 125px 0 0;
+}
+.about-email li:last-of-type{
+    margin-right: 0;
+}
+.about-email li .img{
+    height: 92px;
+}
+.about-email li img{
+    width: 86px;
+    height: 86px;
+}
+.about-email li p{
+    font-size: 17px;
+    line-height: 37px;
+    color: #393b3a;
+}

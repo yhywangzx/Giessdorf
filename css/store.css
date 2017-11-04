@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+.g-header .head-content ul li:nth-child(3) span{
+    display:block;
+}
+/* 开始导航图片 */
+.banner-img{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: green;
+}
+.banner-img .banner-box{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -498px;
+}
+.banner-img .banner-box > p{
+    background-color: rgba(221,176,7,0.80);
+    font-size: 36px;
+    color: #fff;
+    display: table;
+    margin-bottom: 8px;
+    padding: 0 15px;
+}
+/* 开始门店 */
+.store{
+    background:#f2f2f2;
+    padding:120px 0;
+}
+.store .store-b{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.store ul{
+    width: 1014px;
+    overflow: hidden;
+}
+.store ul li{
+    position: relative;
+    width: 320px;
+    height: 269px;
+    margin: 0 18px 20px 0;
+    background: url("../images/store/7.jpg")  no-repeat center/cover;
+    overflow: hidden;
+}
+.store ul li .li-a{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+}
+.store ul li .store-box{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    height:320px;
+    width:269px;
+    padding:17px 25px;
+    background: rgba(0,0,0,.6);
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
+.store ul li .store-box .box-top{
+    -webkit-transition:all .2s .5s linear;
+	-moz-transition:all .2s .5s linear;
+	-ms-transition:all .2s .5s linear;
+	-o-transition:all .2s .5s linear;
+	transition:all .2s .5s linear;
+	opacity:1;
+}
+.store ul li .store-box .box-top .box-left h2{
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+.store ul li .store-box .box-top .box-left h3{
+    font-size: 18px;
+    color: #b5b5b6;
+}
+.store ul li .store-box .box-top .box-right{
+    padding-top:30px;
+}
+.store ul li .store-box .box-top .box-right i{
+	font-size:28px;
+	color:#fff;
+	font-weight: bold;
+	visibility:visible;
+	opacity:1;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+}
+.store ul li .store-box .box-bottom{
+	visibility:hidden; opacity:0;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+}
+.store ul li:hover .box-bottom{
+    visibility:visible; 
+    opacity:1;
+}
+.store ul li:hover .box-right i{
+    visibility:hidden;
+    opacity:0;
+}
+.store ul li:hover .store-box{
+    margin-top: -180px;
+}
+.store ul li:hover .box-top{
+    margin-top:10px;
+    opacity:1;
+}
+.store ul li .store-box .box-line{
+    width: 121px;
+    height: 4px;
+    background:#fff;
+    margin-top: 40px;
+}
+.store ul li .store-box .box-bottom p{
+    font-size:16.8889px;
+    color:#fff;
+    cursor:auto;
+    line-height: 21.9556px;
+    margin-top: 20px;
+}
+.store ul li .store-box .box-bottom a{
+    display:block;
+    padding:12px 0;
+    margin-top: 20px;
+    width: 155px;
+    font-size:14.2222px;
+    font-weight: bold;
+    background: #fff;
+    color: #00758f;
+    text-align: center;
+}
+.store ul li .store-box .box-bottom i{
+    color:#00758f;
+    margin-left: 10px;
+}
+.store ul li .store-box .box-bottom a:hover{
+    background:#00758f;
+    color: #fff;
+}
+.store ul li .store-box .box-bottom a:hover i{
+    color:#fff;
+}
+
+/* 开始门店展示 */
+.storemore{
+    padding: 120px 0;
+}
+.storemore .storemore-box{
+    width: 800px;
+    margin: auto;
+}
+.storemore .storemore-box h2{
+    color: #393b3a;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 10px 0; 
+}
+.storemore .storemore-box h3{
+    overflow: hidden;
+    color: #9fa0a0;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: left;
+    border-bottom: 1px dashed #393b3a;
+}
+.storemore .storemore-box p{
+    color: #898989;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.storemore .storemore-box p span{
+    text-decoration: underline;
+}
+.storemore .storemore-box h4{
+    margin-top: 66px;
+    text-align: center;
+    color: #898989;
+    font-size: 21px;
+}
+.storemore .storemore-box .t-align{
+    text-align: center;
+}
+.storemore .storemore-box .fz-20{
+    font-size: 24px;
+}
+.storemore .storemore-box h5{
+    text-align: center;
+    color:#00b050;
+    font-size: 16px;
+    margin-top: 80px;
+}
+.storemore .storemore-box p i{
+    font-style: normal;
+    font-size: 21px;
+    color:#00b050;
+}
+

@@ -1,0 +1,379 @@
+@charset "utf-8";
+
+.banner{
+    width: 100%;
+    height: 600px;
+    margin: auto;  
+}
+.g-header .head-content ul li:first-of-type span{
+    display:block;
+}
+/* 开始认识吉事多 */
+.main{
+    padding: 120px 0;
+}
+.about{
+    width: 1000px;
+    margin: auto; 
+    padding-bottom: 120px;
+}
+.about h2{
+    opacity: 0;
+    width: 315px;
+    height: 183px;
+    margin: auto;
+    border:1px solid red;
+    animation: about-h 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards; 
+}
+@keyframes about-h{
+	0%{
+        opacity: 0;
+        -ms-transform: translateY(50px);
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+.about .about-info{
+    opacity: 0;
+    margin: 35px auto 0;
+    animation:about-info 1s cubic-bezier(0.4, 0, 0.2, 1) 1s forwards; 
+}
+@keyframes about-info {
+	0%{
+        opacity: 0;
+        -ms-transform: translateY(90px);
+		-webkit-transform: translateY(90px);
+		transform: translateY(90px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+.about .about-info p{
+    color: #000;
+    font-size: 25px;
+    line-height: 47px;
+    text-align: center;
+    font-weight: bold;
+}
+.about .about-info a{
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 42px auto 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #393b3a;
+    border: 1px solid #393b3a;
+    border-radius: 20px;
+}
+.about .about-info a:hover{
+    background:#393b3a;
+    color: #fff; 
+}
+/* 开始门店 */
+.store{
+    opacity:0;
+    display: none;
+    background:#f2f2f2;
+    padding:120px 0;
+    animation: store-b 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards; 
+}
+.store .store-b{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+@keyframes store-b{
+	0%{
+        opacity: 0;
+        -ms-transform: translateY(50px);
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+.store ul{
+    width: 1014px;
+    overflow: hidden;
+}
+.store ul li{
+    position: relative;
+    width: 320px;
+    height: 269px;
+    margin: 0 18px 20px 0;
+    background: url("../images/store/7.jpg")  no-repeat center/cover;
+    overflow: hidden;
+}
+.store ul li .li-a{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+}
+.store ul li .store-box{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    height:320px;
+    width:269px;
+    padding:17px 25px;
+    background: rgba(0,0,0,.6);
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
+.store ul li .store-box .box-top{
+    -webkit-transition:all .2s .5s linear;
+	-moz-transition:all .2s .5s linear;
+	-ms-transition:all .2s .5s linear;
+	-o-transition:all .2s .5s linear;
+	transition:all .2s .5s linear;
+	opacity:1;
+}
+.store ul li .store-box .box-top .box-left h2{
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+.store ul li .store-box .box-top .box-left h3{
+    font-size: 18px;
+    color: #b5b5b6;
+}
+.store ul li .store-box .box-top .box-right{padding-top:30px;}
+.store ul li .store-box .box-top .box-right i{
+	font-size:28px;
+	color:#fff;
+	font-weight: bold;
+	visibility:visible;
+	opacity:1;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+}
+.store ul li .store-box .box-bottom{
+    visibility:hidden; 
+    opacity:0;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-ms-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+}
+.store ul li:hover .box-bottom{
+    visibility:visible; 
+    opacity:1;
+}
+.store ul li:hover .box-right i{
+    visibility:hidden; 
+    opacity:0;
+}
+.store ul li:hover .store-box{
+    margin-top: -180px;
+}
+.store ul li:hover .box-top{
+    margin-top:10px;
+    opacity:1;
+}
+.store ul li .store-box .box-line{
+    width: 121px;
+    height: 4px;
+    background:#fff;
+    margin-top: 40px;
+}
+.store ul li .store-box .box-bottom p{
+    font-size:16.8889px;
+    color:#fff;
+    cursor:auto;
+    line-height: 21.9556px;
+    margin-top: 20px;
+}
+.store ul li .store-box .box-bottom a{
+    display:block;
+    padding:12px 0;
+    margin-top: 20px;
+    width: 155px;
+    font-size:14.2222px;
+    font-weight: bold;
+    background: #fff;
+    color: #00758f;
+    text-align: center;
+}
+.store ul li .store-box .box-bottom i{
+    color:#00758f;
+    margin-left: 10px;
+}
+.store ul li .store-box .box-bottom a:hover{
+    background:#00758f;
+    color: #fff;
+}
+.store ul li .store-box .box-bottom a:hover i{
+    color:#fff;
+}
+.store .store-a{
+    opacity: 0;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 42px auto 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #393b3a;
+    border: 1px solid #393b3a;
+    border-radius: 20px;
+    animation:store-a 1s cubic-bezier(0.4, 0, 0.2, 1) 1s forwards; 
+}
+@keyframes store-a {
+	0%{
+        opacity: 0;
+        -ms-transform: translateY(90px);
+		-webkit-transform: translateY(90px);
+		transform: translateY(90px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+.store .store-a:hover{
+    background:#393b3a;
+    color: #fff; 
+}
+/* 开始新闻 */
+.news{
+    display:none;
+    background: #fff;
+    padding:120px 0;
+}
+.news ul{
+    opacity:0;
+    width:1000px;
+    margin: auto;
+    animation: news 1s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards; 
+}
+@keyframes news{
+	0%{
+        opacity: 0;
+        -ms-transform: translateY(50px);
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+	}
+	100%{
+		opacity: 1;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+.news ul li{
+    position: relative;
+    width: 328px;
+    margin-right: 8px;
+}
+.news ul li:last-of-type{
+    margin-right: 0px;
+}
+.news ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.news ul li .img{
+    width: 299px;
+    height: 210px;
+    /* padding: 23px 9px 9px 20px; */
+    background: url("../images/news/1.jpg")  no-repeat center/cover;
+}
+.news ul li:nth-child(2)  .img{
+    background-image: url('../images/store/7.jpg');
+}
+.news ul li .news-info{
+    overflow: hidden;
+    padding: 16px 0 0 0;
+}
+.news ul li .news-info h2{
+    font-size: 41px;
+    line-height: 47px;
+    color: #000;
+    margin-left: 20px;
+}
+.news ul li .news-info .new-content{
+    width: 300px;
+    margin-left: 40px;
+}
+.news ul li .news-info .new-content h3{
+    width: 273px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 14px;
+    border: none;
+    height: auto;
+    display: -webkit-box;
+    display: -o-box;
+    display: -moz-box;
+    display: -ms-box;
+    -webkit-box-orient: vertical;
+    -o-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -o-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -ms-line-clamp: 2;
+    overflow: hidden;
+}
+.news ul li .news-info .new-content p{
+    color: #000;
+    font-size: 15px;
+    line-height: 24px;
+    height: 101px;
+    border-bottom: 5px solid #00532b;
+    padding-bottom: 10px;
+}
+.news .news-a{
+    opacity: 0;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 50px auto 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #393b3a;
+    border: 1px solid #393b3a;
+    border-radius: 20px;
+    animation:store-a 1s cubic-bezier(0.4, 0, 0.2, 1) 1s forwards; 
+}
+.news .news-a:hover{
+    background:#393b3a;
+    color: #fff; 
+}
